@@ -3,3 +3,16 @@
     <h1> Quotes </h1>
   </div>
 </div> 
+
+<ul>
+  <li *ngFor='let quote of quotes'>{{quote.quote}} {{quote.author}} {{quote.date}}</li>
+</ul>
+
+
+<div class="container">
+  <app-quote-form></app-quote-form>
+</div>
+
+<div class="container">
+  <!-- This is for the other quotes being viewed -->
+</div>

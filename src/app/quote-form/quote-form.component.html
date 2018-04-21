@@ -1,3 +1,22 @@
-<p>
-  quote-form works!
-</p>
+<div class="container-fluid">
+  <form (ngSubmit)='submitGoal()' #quoteForm='ngForm'>
+    <!-- This monitors the changes and validity of input elements -->
+    <div class="form-group">
+      <textarea type="text" class="form-control" id="Quote" placeholder="Create New Quote here" rows="6" [(ngModel)]="newQuote.quote"
+        #Quote="ngModel"></textarea>
+    </div>
+    <div class="form-group">
+      <textarea type="text" class="form-control" id="Author" placeholder="Add Your Name Here" rows="2" [(ngModel)]="newQuote.author"
+        #Author="ngModel" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="Date">Date</label>
+      <input type="text" class="form-control" id="Date" placeholder="Another input" [(ngModel)]="newQuote.date" required>
+    </div>
+    <button type="reset"> Clear All</button>
+    <button type="submit">All Done</button>
+
+
+  </form>
+
+</div>
