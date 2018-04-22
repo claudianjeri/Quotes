@@ -21,4 +21,9 @@ export class QuotesComponent implements OnInit{
     new Quotes("The mind is everything. What you think you become.", "Buddha", new Date(2018, 4, 4))
  ]
 
+ addNewQuote(quote){
+   quote.date = new Date(quote.date)
+   this.quotes.push(quote)
+ }
+
 }

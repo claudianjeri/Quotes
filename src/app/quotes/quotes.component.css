@@ -28,6 +28,10 @@
    
 }
 
+#each{
+    border-radius: 15px 50px;
+    
+}
 .wrapper{
    margin-right:2%;
    margin-left:2%;
@@ -49,7 +53,11 @@ div.card {
     justify-content: center;
     content: inherit;
     align-content: space-between;
+    box-shadow:10px 10px;
     
 }
 
+.footer{
+    
+}
 

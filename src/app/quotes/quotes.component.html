@@ -11,7 +11,7 @@
     <div class="container">
       <h2> Create Your Very Own Now</h2>
       <div id="second" class="col-md-6">
-        <app-quote-form></app-quote-form>
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
               <blockquote class="blockquote">
                {{quote.quote}}
                 <footer class="blockquote-footer text-left">
-                  <cite title="">{{quote.author}}</cite>
+                  <cite title="">{{quote.author}} edited {{quote.date|date|uppercase}}</cite>
                 </footer>
               </blockquote>
               <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:2">
