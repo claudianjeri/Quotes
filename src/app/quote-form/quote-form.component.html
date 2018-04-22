@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <form (ngSubmit)='submitGoal()' #quoteForm='ngForm'>
+  <form (ngSubmit)='submitQuotes()' #quoteForm='ngForm'>
     <!-- This monitors the changes and validity of input elements -->
     <div class="form-group">
       <textarea type="text" class="form-control" id="Quote" placeholder="Create New Quote here" rows="6" [(ngModel)]="newQuote.quote"
@@ -14,7 +14,7 @@
       <input type="date" class="form-control" id="Date" placeholder="Another input" [(ngModel)]="newQuote.date" required>
     </div>
     <button type="reset"> Clear All</button>
-    <button type="submit">All Done</button>
+    <button type="submit" class= "btn btn-success btn-lg">All Done</button>
 
 
   </form>

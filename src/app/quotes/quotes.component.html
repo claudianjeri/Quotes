@@ -19,8 +19,8 @@
     <div id="first" class="rows">
       <div class="card-columns">
         <div class="card-body">
-          <div class="col-md-3" *ngFor='let quote of quotes;let i =index' style="background-color:aqua" id="each">
-            <button (click)='quoteDelete(true)' type="delete" class="close" aria-label="Close" (isComplete)- 'deleteQuotes($event,i)'>
+          <div class="col-md-3" *ngFor='let quote of quotes;let i = index' style="background-color:aqua" id="each">
+            <button (click)='quoteDelete(true)' type="delete" class="close" aria-label="Close" (isComplete)='deleteQuotes($event,i)'>
               <span class="tooltiptext" aria-hidden="true">&times;</span>
             </button>
             <blockquote class="blockquote">
