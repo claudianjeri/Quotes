@@ -26,7 +26,7 @@
               <blockquote class="blockquote">
                {{quote.quote}}
                 <footer class="blockquote-footer text-left">
-                  <cite title="">{{quote.author}} edited {{quote.date|date|uppercase}}</cite>
+                  <cite title="">{{quote.author}} edited {{quote.date|dateCount}}</cite>
                 </footer>
               </blockquote>
               <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:2">
