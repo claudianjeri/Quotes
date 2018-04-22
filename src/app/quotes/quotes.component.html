@@ -20,13 +20,13 @@
         <div class="card-columns">
           <div class="card-body">
             <div class="col-md-3" *ngFor='let quote of quotes' style="background-color:aqua" id="each">
-              <button type="button" class="close" aria-label="Close">
+              <button (click) - 'quoteDelete(true)' type="button" class="close" aria-label="Close" id="delete">
                 <span aria-hidden="true">&times;</span>
               </button>
               <blockquote class="blockquote">
                {{quote.quote}}
                 <footer class="blockquote-footer text-left">
-                  <cite title="">{{quote.author}} edited {{quote.date|dateCount}}</cite>
+                  <cite title="">{{quote.author}} edited {{quote.date|dateCount}} days ago</cite>
                 </footer>
               </blockquote>
               <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:2">
