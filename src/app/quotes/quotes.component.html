@@ -1,18 +1,46 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1> Quotes </h1>
+<div class="wrapper">
+  <div class="jumbotron">
+    <div class="container">
+      <h1> Quotes </h1>
+    </div>
   </div>
-</div> 
-
-<ul>
-  <li *ngFor='let quote of quotes'>{{quote.quote}} {{quote.author}} {{quote.date}}</li>
-</ul>
 
 
-<div class="container">
-  <app-quote-form></app-quote-form>
-</div>
 
-<div class="container">
-  <!-- This is for the other quotes being viewed -->
+  <div class="row">
+    <div class="container">
+      <h2> Create Your Very Own Now</h2>
+      <div id="second" class="col-md-6">
+        <app-quote-form></app-quote-form>
+      </div>
+    </div>
+
+    
+      <div id="first" class="rows">
+        <div class="card-columns">
+          <div class="card-body">
+            <div class="col-md-3" *ngFor='let quote of quotes' style="background-color:aqua" id="each">
+              <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <blockquote class="blockquote">
+               {{quote.quote}}
+                <footer class="blockquote-footer text-left">
+                  <cite title="">{{quote.author}}</cite>
+                </footer>
+              </blockquote>
+              <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:2">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+        <br>
+      </div>
+    
+    <br>
+  </div>
+  <br>
 </div>
