@@ -26,7 +26,9 @@ export class QuotesComponent implements OnInit{
    this.quotes.push(quotes)
    
  }
-
+ toogleExtra(index){
+  this.quotes[index].showMeaning = !this.quotes[index].showMeaning;
+};
  
  quoteDelete(isComplete,index){
   if (isComplete){
