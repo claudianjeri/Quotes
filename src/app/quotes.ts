@@ -1,3 +1,3 @@
 export class Quotes {
-    constructor(public quote: string, public author: string, public date: Date ){ }
+    constructor(public id: number, public quote: string, public author: string, public date: Date ){ }
 }

@@ -1,12 +1,13 @@
-.jumbotron{
+/* .jumbotron{
     background-color: bisque;
     height: 40%;
-}   
+}    */
 .container{
     text-align: center;
 }
 .h1{
-    padding-left:550px;
+    font-family: 'LinotypeZapfino One', arial;
+    text-align: center;
 }
 .h2{
     position: fixed;
@@ -15,66 +16,49 @@
     display: inline-flex;
     flex-direction:space-around;
 } */
-
-.container first{
-    float: left;
-    max-width:30%;
-    position: fixed;
+.jumbotron{
+    width:74%;
+    height:900px;   
+    margin-left:350px;
+    margin-right: 150px;
+    overflow-wrap: inherit;
+    background-image: url("../../assets/apollonian-2-1440.jpg");
+    background-size: cover;
+    background-repeat: no-repeat repeat;
 }
-
-#first{
-    float:right;
-    margin-bottom: 35px;
-   
+h2{
+    font-family: 'LinotypeZapfino One';
+    color:rgb(161, 5, 70);
+    font-size: 125px;
+    text-align: center;
+    margin-top: 0px;
 }
 
 #each{
     border-radius: 15px 50px;
-    
+    /* position:relative; */
 }
-.wrapper{
+/* .wrapper{
    margin-right:2%;
    margin-left:2%;
-   overflow: hidden;
-}
-div.card {
+} */
+/* div.card {
     width: 350px;
     height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     padding: 2px 16px;
-  }
+  } */
 
 #each{
-    width: 350px;
+    width: 30%; 
     height: 170px;
-    margin-left: 24px;
-    margin-top: 24px;
-    justify-content: center;
-    content: inherit;
-    align-content: space-between;
+    margin-top: 85px; 
+    margin-right: 30px;
     box-shadow:10px 10px;
-    
+    display: inline-block;
+    overflow:hidden;
 }
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -60px;
-}
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
 

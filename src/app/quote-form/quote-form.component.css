@@ -1,3 +1,26 @@
-/* .container-fluid{
-    align-content: center;
-} */
+.sidenav {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.form-group {
+    margin-top:20px;
+    padding-top:15px; 
+    margin-left:7px;
+    margin-right:7px;
+
+}
+
+h2{
+    font-family: 'LinotypeZapfino One', arial;
+    color: rgba(212, 52, 132, 0.39);
+    font-size: 65px;
+}
+

@@ -1,46 +1,22 @@
-<div class="wrapper">
-  <div class="jumbotron">
-    <div class="container">
-      <h1> Quotes </h1>
-    </div>
+<div class="jumbotron">
+
+  <h2>MY QUOTES </h2>
+
+  <div class="container">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
 
 
-
-  <div class="row">
-    <div class="container">
-      <h2> Create Your Very Own Now</h2>
-      <div id="second" class="col-md-6">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-      </div>
+  <div class="container-flex">
+    <div *ngFor='let quote of quotes;let i = index' style="background-color:aqua" id="each">
+      <blockquote class="blockquote" (isComplete)='quoteDelete($event,i)'>
+        {{quote.quote}}
+      </blockquote>
+      <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:2">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <button class="btn btn-primary"(click)='toogleExtra(i)'> See more..</button>
+    <app-quote-details *ngIf="quote.showMeaning"[quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
     </div>
-
-
-    <div id="first" class="rows">
-      <div class="card-columns">
-        <div class="card-body">
-          <div class="col-md-3" *ngFor='let quote of quotes;let i = index' style="background-color:aqua" id="each">
-            <button (click)='quoteDelete(true)' type="delete" class="close" aria-label="Close" (isComplete)='deleteQuotes($event,i)'>
-              <span class="tooltiptext" aria-hidden="true">&times;</span>
-            </button>
-            <blockquote class="blockquote">
-              {{quote.quote}}
-              <footer class="blockquote-footer text-left">
-                <cite title="">{{quote.author}} edited {{quote.date|dateCount}} days ago</cite>
-              </footer>
-            </blockquote>
-            <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:2">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </div>
-        </div>
-        <br>
-        <br>
-      </div>
-      <br>
-    </div>
-
-    <br>
   </div>
-  <br>
 </div>

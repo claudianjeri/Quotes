@@ -1,20 +1,18 @@
-<div class="container-fluid">
+<div class="sidenav">
+    <h2> <strong>Create Your Very Own Now!!!</strong></h2>
   <form (ngSubmit)='submitQuotes()' #quoteForm='ngForm'>
     <!-- This monitors the changes and validity of input elements -->
     <div class="form-group">
-      <textarea type="text" class="form-control" id="Quote" placeholder="Create New Quote here" rows="6" [(ngModel)]="newQuote.quote"
-        #Quote="ngModel"></textarea>
+      <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" placeholder="Add Quote Here.." required></textarea>
     </div>
     <div class="form-group">
-      <textarea type="text" class="form-control" id="Author" placeholder="Add Your Name Here" rows="2" [(ngModel)]="newQuote.author"
-        #Author="ngModel" required></textarea>
+      <textarea class="form-control" id="author" rows="4" [(ngModel)]="newQuote.author" name="author" #author="ngModel" placeholder="Add Your Name Here.." required></textarea>
     </div>
     <div class="form-group">
-      <label for="Date">Date</label>
-      <input type="date" class="form-control" id="Date" placeholder="Another input" [(ngModel)]="newQuote.date" required>
+      <input type="date" class="form-control" id="date" [(ngModel)]="newQuote.date" name="date" #date="ngModel" required>
     </div>
-    <button type="reset"> Clear All</button>
-    <button type="submit" class= "btn btn-success btn-lg">All Done</button>
+    <button type="reset" class=" btn btn-secondary btn-lg"> Clear All</button>
+    <button type="submit" class="btn btn-outline-secondary btn-lg">All Done</button>
 
 
   </form>
