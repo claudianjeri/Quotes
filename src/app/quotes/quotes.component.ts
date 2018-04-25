@@ -27,7 +27,7 @@ export class QuotesComponent implements OnInit{
    
  }
  toogleExtra(index){
-  this.quotes[index].showMeaning = !this.quotes[index].showMeaning;
+  this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
 };
  
  quoteDelete(isComplete,index){
@@ -38,6 +38,10 @@ export class QuotesComponent implements OnInit{
           this.quotes.splice(index,1)
       }
   }
+}
+
+upvote(index){
+  
 }
 
 }

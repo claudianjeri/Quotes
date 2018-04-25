@@ -15,8 +15,10 @@
       <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:2">
         <i class="fa fa-twitter"></i>
       </a>
-      <button class="btn btn-primary"(click)='toogleExtra(i)'> See more..</button>
-    <app-quote-details *ngIf="quote.showMeaning"[quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+      <button class="btn btn-primary"(click)='toogleExtra(i)' id="btn"> See more..</button>
+      <button class="btn btn-primary" (click)='upvote(i)' id="btn">I like</button>
+      <button class="btn btn-primary" (click)='downvote(i)' id="btn">Don't Like</button>
+    <app-quote-details *ngIf="quote.showAuthor"[quote]='quote' (isComplete)='quoteDelete($event,i)'></app-quote-details>
     </div>
   </div>
 </div>
