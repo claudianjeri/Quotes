@@ -16,9 +16,17 @@
         <i class="fa fa-twitter"></i>
       </a>
       <button class="btn btn-primary"(click)='toogleExtra(i)' id="btn"> See more..</button>
-      <button class="btn btn-primary" (click)='upvote(i)' id="btn">I like</button>
-      <button class="btn btn-primary" (click)='downvote(i)' id="btn">Don't Like</button>
-    <app-quote-details *ngIf="quote.showAuthor"[quote]='quote' (isComplete)='quoteDelete($event,i)'></app-quote-details>
+      <p>
+        <span style="font-size: 1.2em; color: blue;"  (click)="upvote(i)">
+          <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+        </span> {{quote.upvotes}} &ensp;
+        <span style="color: red; font-size: 1.2em;" (click)="downvote(i)">
+          <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+        </span>
+        {{quote.downvotes}} &ensp;
+      
+        </p>
+      <app-quote-details *ngIf="quote.showAuthor"[quote]='quote' (isComplete)='quoteDelete($event,i)'></app-quote-details>
     </div>
   </div>
 </div>
