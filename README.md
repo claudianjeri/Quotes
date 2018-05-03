@@ -1,17 +1,17 @@
 # Quotes Application
-##by Claudia.
+###### by Claudia.
 
-##Description and application behavior
+## Description and application behavior
 This is my Moringa School project. 
 Its an application that allows a user to:
-> To create a quote and view it.
-> To view already listed quotes.
-> To delete a quote.
-> To give a thumbs up or down to an individual quote.
-> To view extra info for a particular quote, i.e: 
+> * To create a quote and view it.
+> * To view already listed quotes.
+> * To delete a quote.
+> * To give a thumbs up or down to an individual quote.
+> * To view extra info for a particular quote, i.e: 
   the author and the date
 
-##Technology Used:
+## Technology Used:
 This application was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 It uses bootstrap, css and javascript.  
 
