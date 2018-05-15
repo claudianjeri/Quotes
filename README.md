@@ -17,7 +17,18 @@ It uses bootstrap, css and javascript.
 
 
 ## Setup/Installation Requirements
+###### requirements
+- npm (latest version)
+- visual studio or atom
+- terminal. (sublime, git bash)
+> * Clone the project from [here](https://github.com/claudianjeri/quotes)
+> * Navigate to the folder with the project using the terminal.
+> * Run ng serve in your terminal.
+> * Once its done compling on the terminal,
+open [this] (http://localhost:4200/)
 
+## Known Bugs.
+> * There are no known bugs. If found, [contact me] (claudianjeri04@gmail.com)
 ## Support and contact details
 > * Email Address: claudianjeri04@gmail.com
 
@@ -25,4 +36,4 @@ It uses bootstrap, css and javascript.
 > * MIT LICENSE
 > * This application's source code is free for any open source project.
 
-* > © Claudia Njeri| Credits [Moringa School](https://moringaschool.com/)  
+> © Claudia Njeri| Credits [Moringa School](https://moringaschool.com/)  

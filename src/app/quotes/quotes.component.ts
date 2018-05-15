@@ -49,7 +49,6 @@ downvote(i){
   this.quotes[i].downVote()
 }
 
-
 }
 
 
