@@ -1,21 +1,15 @@
-/* .jumbotron{
-    background-color: bisque;
-    height: 40%;
-}    */
+@font-face{
+    font-family: "Quantum";
+    src :url ("../../../fonts/Quantum.otf");
+}
 .container{
     text-align: center;
 }
-.h1{
-    font-family: 'LinotypeZapfino One', arial;
-    text-align: center;
-}
+
 .h2{
     position: fixed;
 }
-/* .row{
-    display: inline-flex;
-    flex-direction:space-around;
-} */
+
 .big-one{
     width:100%;
     height:900px;   
@@ -26,10 +20,11 @@
     background-attachment: fixed;
 }
 h2{
-    font-family: 'LinotypeZapfino One';
-    color:rgb(161, 5, 70);
+    font-family: 'Quantum';
+    color: grey; 
     font-size: 125px;
     text-align: center;
+    margin-left: 355px;
     margin-top: 0px;
 }
 
@@ -68,5 +63,6 @@ h2{
     
     margin-left:350px;
 }
+
 
 

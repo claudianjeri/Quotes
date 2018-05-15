@@ -9,25 +9,33 @@
 
 
  <div class="container-flex">
-    <div *ngFor='let quote of quotes;let i = index' style="background-color:aqua" id="each">
-      <blockquote class="blockquote" (isComplete)='quoteDelete($event,i)'>
+    <div *ngFor='let quote of quotes;let i = index' style="background-color:rgb(93, 131, 131); opacity:0.8" id="each">
+      <blockquote class="blockquote" (isComplete)='quoteDelete($event,i)' style="color:black">
         {{quote.quote}}
       </blockquote>
-      <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:2">
+      <div class="row">
+        <div class= "col-md-2">
+      <a target="blank" [href]="'https://twitter.com/intent/tweet?text='+ quote" class="btn btn-outline-success" style="opacity:1; color:rgb(149, 205, 238)">
         <i class="fa fa-twitter"></i>
       </a>
-      <button class="btn btn-primary" (click)='toogleExtra(i)' id="btn"> See more..</button>
-      <p>
-        <span style="font-size: 1.2em; color: blue;" (click)="upvote(i)">
+    </div>
+    <div class= "col-md-5">
+      <button class="btn btn-secondary" (click)='toogleExtra(i)' id="btn" style="background-color:goldenrod"> See more..</button> 
+    </div>
+    <div class= "col-md-5">
+       <p>
+        <span style="font-size: 1.2em; color: black;" (click)="upvote(i)">
           <i class="fa fa-thumbs-up" aria-hidden="true"></i>
         </span> {{quote.upvotes}} &ensp;
-        <span style="color: red; font-size: 1.2em;" (click)="downvote(i)">
+        <span style="color: black; font-size: 1.2em;" (click)="downvote(i)">
           <i class="fa fa-thumbs-down" aria-hidden="true"></i>
         </span>
         {{quote.downvotes}} &ensp;
-
       </p>
+    </div> 
+    </div>
       <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)='quoteDelete($event,i)'></app-quote-details>
+
     </div>
   </div>
 </div>

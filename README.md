@@ -16,13 +16,13 @@ This application was generated with [Angular CLI](https://github.com/angular/ang
 It uses bootstrap, css and javascript.  
 
 
-##Setup/Installation Requirements
+## Setup/Installation Requirements
 
-##Support and contact details
+## Support and contact details
 > * Email Address: claudianjeri04@gmail.com
 
-##License and terms of use
+## License and terms of use
 > * MIT LICENSE
 > * This application's source code is free for any open source project.
 
-+> © Claudia Njeri| Credits [Moringa School](https://moringaschool.com/)  
+* > © Claudia Njeri| Credits [Moringa School](https://moringaschool.com/)  
