@@ -25,10 +25,10 @@ It uses bootstrap, css and javascript.
 > * Navigate to the folder with the project using the terminal.
 > * Run ng serve in your terminal.
 > * Once its done compling on the terminal,
-open [this] (http://localhost:4200/)
+open http://localhost:4200/
 
 ## Known Bugs.
-> * There are no known bugs. If found, [contact me] (claudianjeri04@gmail.com)
+> * There are no known bugs. If found, contact me at claudianjeri04@gmail.com
 ## Support and contact details
 > * Email Address: claudianjeri04@gmail.com
 
