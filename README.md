@@ -12,7 +12,7 @@ Its an application that allows a user to:
   the author and the date
 
 ## Technology Used:
-This application was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+This application was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8. NPM 5.5.1
 It uses bootstrap, css and javascript.  
 
 
